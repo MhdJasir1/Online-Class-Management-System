@@ -1,0 +1,38 @@
+
+server:
+  port: 8080
+spring:
+  application:
+    name: OnlineClassManagment
+  datasource:
+    url: jdbc:mysql://localhost:3306/online_class_management
+    username: root
+    password: Jasir@1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  threads:
+    virtual:
+      enabled: true
+jwt:
+  secret: 1o4RbVqRTa+lEWCx9ZKPNProd7NINpEPB46grgr2mW8=
+  accessTokenLife: 10
+  refreshTokenLife: 30
+  issuer: www.novatechzone.com
+
+#server:
+#  port: 8080
+#spring:
+#  datasource:
+#    url: jdbc:postgresql://dpg-cneb1m6v3ddc73cffbj0-a.oregon-postgres.render.com:5432/long_life_ayurveda_db
+#    username: long_life_ayurveda_db_user
+#    password: OPLhD3ZtWEEwwWeJUZU1b0DVURuRJN2d
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+#  threads:
+#    virtual:
+#      enabled: true
